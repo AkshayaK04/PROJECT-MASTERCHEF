@@ -1,0 +1,135 @@
+*
+  {
+    font-family: 'Bitter', serif;
+
+  }
+
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+html {
+  padding: 0 5%;
+  transition: padding .2s ease-in-out;
+}
+@media screen and (min-width: 45em) {
+  html {
+    padding: 0 15%;
+  }
+}
+@media screen and (min-width: 60em) {
+  html {
+    padding: 0 25%;
+  }
+}
+
+body {
+  background: #efefef;
+  color: #333;
+  font-family: sans-serif;
+}
+body * {
+  box-sizing: border-box;
+}
+
+form {
+  background-color: #d6d6d6;
+  padding: 1rem;
+  border-radius: .25rem;
+}
+form * {
+  display: block;
+  font-size: 1.25rem;
+}
+form label {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+form label span {
+  font: 2rem Lobster;
+}
+@media screen and (min-width: 90em) {
+  form label {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+  }
+  form label:nth-child(3n) {
+    margin-right: 0;
+  }
+  form label.full-width {
+    width: 100%;
+  }
+}
+form input, form textarea {
+  width: 100%;
+  padding: .5rem 1rem;
+  border: 0 none;
+  line-height: 2;
+  transition: box-shadow .2s ease-in-out;
+}
+form input:focus, form textarea:focus {
+  outline: 0 none;
+  box-shadow: 0 0 0.5rem #a3a3a3;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+input[type="submit"] {
+  background: black;
+  color: #fff;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  border-radius: .25rem;
+  font-family: Lobster;
+  text-transform: capitalize;
+  font-size: 2rem;
+  line-height: normal;
+}
+input[type="submit"]:hover, input[type="submit"]:focus
+ {
+  background: #fff;
+  color: black;
+  box-shadow: none;
+}
+input[type="submit"]:active {
+  -webkit-transform: scale(0.95);
+}
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid grey;
+  background-color: black;
+}
+
+li 
+{
+  float: left;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) 
+{
+  background-color: grey;
+}
+
+.activ 
+{
+  background-color: red;
+}
+h1 
+{
+  text-shadow: 2px 2px 5px red;
+  text-align: center;
+  font-size: 50px;
+}

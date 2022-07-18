@@ -1,0 +1,110 @@
+table,th,td
+{
+	border:2px solid black;
+	border-collapse: collapse;
+	height: 20px;
+	width: 80%;
+	text-align: center;
+	}
+
+td,th
+{
+	text-align: center;
+	padding: 10px;
+}
+
+.container 
+{
+  position: relative;
+  width: 50%;
+}
+
+.image 
+{
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle 
+{
+  transition: .5s ease;
+  opacity: 0;
+  
+}
+
+.container:hover .image 
+{
+  opacity: 0.3;
+}
+
+.container:hover .middle 
+{
+  opacity: 1;
+}
+
+.text 
+{
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+*
+{
+	margin: 10px 10px 10px 10px;
+  font-family: 'Poppins', sans-serif;
+}
+.no
+{
+  font-size: 30px;
+  color: red;
+}
+h1 
+{
+  text-shadow: 2px 2px 5px red;
+  text-align: center;
+  font-size: 50px;
+}
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid grey;
+  background-color: black;
+}
+
+li 
+{
+  float: left;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) 
+{
+  background-color: grey;
+  text-decoration: none;
+}
+
+.activ 
+{
+  background-color: red;
+}
+h1 
+{
+  text-shadow: 2px 2px 5px red;
+  text-align: center;
+  font-size: 50px;
+}
+
